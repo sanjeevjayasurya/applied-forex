@@ -1,23 +1,23 @@
-import {
-  Link as ChakraLink,
-  Text,
-  Code,
-  List,
-  ListIcon,
-  ListItem,
-} from '@chakra-ui/react'
-import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
 import { Hero } from '../components/Hero'
 import { Container } from '../components/Container'
-import { Main } from '../components/Main'
-import { DarkModeSwitch } from '../components/DarkModeSwitch'
-import { CTA } from '../components/CTA'
 import { Footer } from '../components/Footer'
+import { NavBar } from '../components/Navbar'
+import { WhyAF } from '../components/WhyAF'
+import { Testimonial } from '../components/Testimonial'
+import Pricing from '../components/Pricing'
+import BasicStatistics from '../components/Stats'
+
 
 const Index = () => (
-  <Container height="100vh">
+  <Container>
+    <NavBar />
     <Hero />
-    <Main>
+    <BasicStatistics />
+    <WhyAF />
+    <Testimonial />
+    <Pricing />
+    <Footer />
+    {/* <Main>
       <Text>
         Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code>.
       </Text>
@@ -41,13 +41,13 @@ const Index = () => (
           </ChakraLink>
         </ListItem>
       </List>
-    </Main>
+    </Main> */}
 
-    <DarkModeSwitch />
-    <Footer>
+    {/* <DarkModeSwitch /> */}
+    {/* <Footer>
       <Text>Next ❤️ Chakra</Text>
-    </Footer>
-    <CTA />
+    </Footer> */}
+    {/* <CTA /> */}
   </Container>
 )
 

@@ -10,7 +10,47 @@ const breakpoints = createBreakpoints({
   xl: '80em',
 })
 
+const Button = {
+  // The styles all button have in common
+  baseStyle: {
+    fontWeight: "bold",
+    borderRadius: "5px", // <-- border radius is same for all variants and sizes
+    textTransform: "uppercase"
+  },
+  // Two sizes: sm and md
+  sizes: {
+    sm: {
+      fontSize: "sm",
+      px: 4, // <-- px is short for paddingLeft and paddingRight
+      py: 3, // <-- py is short for paddingTop and paddingBottom
+    },
+    md: {
+      fontSize: "md",
+      width: "150px",
+      px: 10, // <-- these values are tokens from the design system
+      py: 6, // <-- these values are tokens from the design system
+    },
+  },
+  // Two variants: outline and solid
+  variants: {
+    solid: {
+      bg: "#0babcb",
+      color: "white",
+      border: "1px solid white"
+    },
+  },
+  // The default size and variant values
+  defaultProps: {
+    size: "md",
+    variant: "solid"
+  },
+}
+
+
 const theme = extendTheme({
+  components: {
+    Button
+  },
   colors: {
     black: '#16161D',
   },
