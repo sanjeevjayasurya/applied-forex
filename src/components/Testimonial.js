@@ -20,7 +20,7 @@ const array = [
     {
         name: "Emre",
         jobTitle: "Fellow Trader",
-        imageSrc: "/Danny.jpeg",
+        imageSrc: "/Emre.png",
         testimonial: "I joined AF 4-5 months ago, I joined this server to seek help because i was a beginner and I had bad trade days. I've met some really wonderful people here such as Teekay, Leo and Troy. They helped me to trade and this really gave me a lot of experience. Weekly live trade meetings, charts where I could see all kinds of analyzes, you name it. I am very happy to be a member of AF, and I hope to be a member here for life!"
     }
 ]
@@ -78,7 +78,6 @@ export const Testimonial = () => {
                         <Circle w={state === 0 ? "3" : "2"} h={state === 0 ? "3" : "2"} bg={state === 0 ? "blue.500" : "currentColor"} onClick={() => setState(0)} />
                         <Circle w={state === 1 ? "3" : "2"} h={state === 1 ? "3" : "2"} bg={state === 1 ? "blue.500" : "currentColor"} onClick={() => setState(1)} />
                         <Circle w={state === 2 ? "3" : "2"} h={state === 2 ? "3" : "2"} bg={state === 2 ? "blue.500" : "currentColor"} onClick={() => setState(2)} />
-                        {/* <Circles /> */}
                     </HStack>
                 </Box>
             </Box>
