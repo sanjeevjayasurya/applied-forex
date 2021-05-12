@@ -25,28 +25,55 @@ export const NavBar = () => {
                                     aria-label="Home"
                                     my={5}
                                     w="100%"
+                                    _hover={{
+                                        bg: "blue.100",
+                                        color: "black"
+                                    }}
                                 >
                                     Home
                         </Button>
                             </Link>
-                            <Link href="/">
+                            <Link href="/#about">
                                 <Button
                                     as="a"
                                     variant="ghost"
                                     aria-label="About"
                                     my={5}
                                     w="100%"
+                                    _hover={{
+                                        bg: "blue.100",
+                                        color: "black"
+                                    }}
                                 >
                                     About
                         </Button>
                             </Link>
-                            <Link href="/">
+                            <Link href="/#team">
+                                <Button
+                                    as="a"
+                                    variant="ghost"
+                                    aria-label="Team"
+                                    my={5}
+                                    w="100%"
+                                    _hover={{
+                                        bg: "blue.100",
+                                        color: "black"
+                                    }}
+                                >
+                                    Team
+                        </Button>
+                            </Link>
+                            <Link href="/#contact">
                                 <Button
                                     as="a"
                                     variant="ghost"
                                     aria-label="Contact"
                                     my={5}
                                     w="100%"
+                                    _hover={{
+                                        bg: "blue.100",
+                                        color: "black"
+                                    }}
                                 >
                                     Contact
                         </Button>
@@ -89,6 +116,16 @@ export const NavBar = () => {
                                 w="100%"
                             >
                                 About
+                            </Button>
+                        </Link>
+                        <Link href="#team">
+                            <Button
+                                as="a"
+                                variant="ghost"
+                                aria-label="Contact"
+                                w="100%"
+                            >
+                                Team
                             </Button>
                         </Link>
                         <Link href="#contact">

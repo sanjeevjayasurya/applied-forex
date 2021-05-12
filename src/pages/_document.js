@@ -1,17 +1,22 @@
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
-import { ColorModeScript } from '@chakra-ui/react'
+import { Box, ColorModeScript } from '@chakra-ui/react'
 
 export default class Document extends NextDocument {
   render() {
     return (
       <Html>
-        <Head />
-        <body>
-          {/* Make Color mode to persists when you refresh the page. */}
+        <Head>
+          <link rel="shortcut icon" href="/favicon.png" />
+        </Head>
+        <body style={{
+          "display": "table",
+        }}>
           <ColorModeScript />
           <Main />
-          <NextScript />
+          <NextScript>
+          </NextScript>
         </body>
+
       </Html>
     )
   }

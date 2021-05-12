@@ -58,7 +58,7 @@ export default function Pricing() {
             <Stack direction={'row'} align={'center'} justify={'center'}>
               <Text fontSize={'3xl'}>$</Text>
               <Text fontSize={'6xl'} fontWeight={800}>
-                49
+                49.99
             </Text>
               <Text>/month</Text>
             </Stack>

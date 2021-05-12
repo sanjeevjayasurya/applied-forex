@@ -3,7 +3,7 @@ import { Box, Flex, Heading, Image, SlideFade, Text } from "@chakra-ui/react"
 
 export const WhyAF = () => {
     return (
-        <Flex mt={100} mb={100} width="100%" justifyContent="center" alignItems="center" flexDir="column" background="black">
+        <Flex id="about" mt={100} mb={100} width="100%" justifyContent="center" alignItems="center" flexDir="column" background="black">
             <SlideFade in={true} offsetY="20px" delay={0.25}>
                 <Heading
                     fontSize={["2rem", "3rem", "4rem", "5rem"]}
