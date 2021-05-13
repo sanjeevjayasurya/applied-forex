@@ -13,6 +13,7 @@ import {
   Heading,
 } from '@chakra-ui/react';
 import { CheckIcon } from '@chakra-ui/icons';
+import Link from 'next/link';
 
 export default function Pricing() {
   return (
@@ -87,22 +88,23 @@ export default function Pricing() {
               Premium Support
             </ListItem>
             </List>
-
-            <Button
-              mt={10}
-              w={'full'}
-              bg={'blue.400'}
-              color={'white'}
-              rounded={'xl'}
-              boxShadow={'0 5px 20px 0px rgb(0 96 255 / 43%)'}
-              _hover={{
-                bg: 'blue.500',
-              }}
-              _focus={{
-                bg: 'blue.500',
-              }}>
-              Start your trial
+            <Link href="https://applied-forex-ternary.herokuapp.com/?password=Premium">
+              <Button
+                mt={10}
+                w={'full'}
+                bg={'blue.400'}
+                color={'white'}
+                rounded={'xl'}
+                boxShadow={'0 5px 20px 0px rgb(0 96 255 / 43%)'}
+                _hover={{
+                  bg: 'blue.500',
+                }}
+                _focus={{
+                  bg: 'blue.500',
+                }}>
+                SUBSCRIBE
           </Button>
+            </Link>
           </Box>
         </Box>
       </Center >
